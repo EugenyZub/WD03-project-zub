@@ -1,12 +1,7 @@
 <?php 
 
 require "config.php";
-
-//echo HOST;
-//echo ROOT;
-//print_r($_SERVER);
-echo "index.php";
-echo "<br><br>";
+require "db.php";
 
 
 /*-------------------------------------------
