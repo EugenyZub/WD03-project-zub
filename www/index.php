@@ -8,13 +8,15 @@ define('ROOT', dirname(__FILE__).'/');
 
 $errors = array();
 
-require "config.php";
-require "db.php";
-require "libs/functions.php";
+require ROOT ."config.php";
+require ROOT . "db.php";
+require ROOT . "libs/functions.php";
 session_start();
 
 /*-------------------------------------------
+
 РОУТЕР
+
 --------------------------------------------*/
 //request URL
 
@@ -26,7 +28,7 @@ $uri = explode('?', $uri); // 2 parts before and after "?"
 
 switch ($uri[0]) {
 	case '':
-		include "modules/main/index.php";
+		include ROOT . "modules/main/index.php";
 		break;
 	
 	// ::::::::::::::: USERS ::::::::::::::::
@@ -39,7 +41,7 @@ switch ($uri[0]) {
 		require ROOT . "modules/login/registration.php";
 		break;
 
-	case 'logput':
+	case 'logout':
 		require ROOT . "modules/login/logout.php";
 		break;
 
@@ -56,19 +58,19 @@ switch ($uri[0]) {
 		break;
 
 	case 'profile-edit':
-		require ROOT . "modules/profile/editing.php";
+		require ROOT . "modules/profile/edit.php";
 		break;
 
 	case 'about':
-		include "modules/about/index.php";
+		include ROOT . "modules/about/index.php";
 		break;
 
 	case 'contacts':
-		include "modules/contacts/index.php";
+		include ROOT . "modules/contacts/index.php";
 		break;
 
 	case 'blog':
-		include "modules/blog/index.php";
+		include ROOT . "modules/blog/index.php";
 		break;	
 
 	default:

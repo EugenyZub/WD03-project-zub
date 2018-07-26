@@ -1,8 +1,9 @@
 <?php 
 
+$title = "Регистрация";
+
 //Если форма отправлена
 if ( isset($_POST['register']) ) {
-
 
 	if ( trim($_POST['email']) == '' ) {
 		$errors[] = ['title' => 'Введите Email', 'desc' => '<p>Email обязателен для регистрации на сайтe</p>' ];
@@ -11,7 +12,6 @@ if ( isset($_POST['register']) ) {
 	if ( trim($_POST['password']) == '' ) {
 		$errors[] = ['title' => 'Введите Пароль'];
 	}
-
 
 
 	//Проверка, что пользователь существует
@@ -33,7 +33,7 @@ if ( isset($_POST['register']) ) {
 		$_SESSION['login'] = "1";
 		$_SESSION['role'] = $user->role;
 
-		header('Location: ' . HOST . "/");
+		header('Location: ' . HOST . "profile-edit");
 		exit();
 
 	}
@@ -46,7 +46,7 @@ include ROOT . "templates/login/form-registration.tpl";
 $content = ob_get_contents();
 ob_end_clean();
 
-include ROOT . "templates/_parts/_header.tpl";
+include ROOT . "templates/_parts/_head.tpl";
 include ROOT . "templates/login/login-page.tpl";
-include ROOT . "templates/_parts/_footer.tpl";
+include ROOT . "templates/_parts/_foot.tpl";
 ?>
