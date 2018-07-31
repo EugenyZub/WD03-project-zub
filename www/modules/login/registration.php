@@ -1,7 +1,7 @@
 <?php 
 
 //Если форма отправлена
-if ( isset($_POST['register']) ) {
+if ( isset($_POST['registration']) ) {
 
 
 	if ( trim($_POST['email']) == '' ) {
