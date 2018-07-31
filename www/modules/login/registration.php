@@ -24,7 +24,7 @@ if ( isset($_POST['register']) ) {
 
 	if ( empty($errors) ) {
 		$user = R::dispense('users');
-		$user->email = htmltities($_POST['email']);
+		$user->email = htmlentities($_POST['email']);
 		$user->role = 'user';
 		$user->password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 		R::store($user);
