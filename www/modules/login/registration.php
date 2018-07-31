@@ -3,7 +3,7 @@
 $title = "Регистрация";
 
 // Если форма отправлена - то делаем регистрацию
-if ( isset($_POST['register'])) {
+if ( isset($_POST['registration'])) {
 
 	if ( trim($_POST['email']) == '' ) {
 		$errors[] = ['title' => 'Введите Email', 'desc' => '<p>Email обязателен для регистрации на сайте</p>' ];
