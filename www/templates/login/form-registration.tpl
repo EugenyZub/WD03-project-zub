@@ -13,5 +13,6 @@
 
 	<input class="input" type="email" name="email" placeholder="Email" />
 	<input class="input" type="password" name="pasword" placeholder="Пароль" />
+	<input  type="hidden" name="registration" value="register" />
 	<input type="submit" name="register" class="button button--enter"  value="Регистрация" />
 </form>
