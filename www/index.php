@@ -8,11 +8,10 @@ define('ROOT', dirname(__FILE__).'/');
 
 $errors = array();
 
-require ROOT ."config.php";
+require ROOT . "config.php";
 require ROOT . "db.php";
 require ROOT . "libs/functions.php";
 session_start();
-
 /*-------------------------------------------
 
 РОУТЕР
@@ -54,7 +53,7 @@ switch ($uri[0]) {
 		break;	
 
 	case 'profile':
-		require ROOT . "modules/profile/login.php";
+		require ROOT . "modules/profile/index.php";
 		break;
 
 	case 'profile-edit':

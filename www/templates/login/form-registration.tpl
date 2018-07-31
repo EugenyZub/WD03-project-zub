@@ -1,4 +1,4 @@
-<form class="login-page__form text-center" id="register-form" method="POST" action="<?=HOST?>registration">
+<form class="login-page__form text-center" id="register-form" method="POST" action="<?=HOST?>profile">
 	<div class="title-1">Регистрация</div>
 
 	<?php 	
@@ -7,7 +7,7 @@
 	//	echo "</pre>";
 	?>
 
-	<?php   require ROOT . "templates/_parts/errors.tpl"?>
+	<?php   require ROOT . "templates/_parts/errors.tpl" ?>
 	
 
 

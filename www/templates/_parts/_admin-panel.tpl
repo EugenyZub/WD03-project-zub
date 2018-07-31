@@ -1,7 +1,7 @@
 <div class="header-admin">
 	<div class="header-admin__user">
 		<div class="avatar avatar--small"><img src="../../../img/avatars/avatar-1.jpg" title="Юрий Ключевский" /></div>
-		<div class="header-admin__user-data"><a class="header-admin__name" href="#">Юрий Ключевский</a>
+		<div class="header-admin__user-data"><a class="header-admin__name" href="<?=HOST?>profile"><?=$_SESSION['logged_user']['name']?> <?=$_SESSION['logged_user']['secondname']?></a>
 			<div class="badge">Администратор</div>
 		</div>
 	</div>

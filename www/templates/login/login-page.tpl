@@ -7,7 +7,7 @@
 					<div class="col-md-auto">
 						<div class="logo">
 							<div class="logo__icon"><i class="far fa-paper-plane"></i></div>
-							<div class="logo__text"><a class="header-logo__title" href="#">Супер Сайт</a>
+							<div class="logo__text"><a class="header-logo__title" href="index.html">Супер Сайт</a>
 								<div class="header-logo__sub"></div>
 							</div>
 						</div>
@@ -19,9 +19,6 @@
 						<?php } else { ?>
 							<a class="login-page__link" href="<?=HOST?>registration">Регистрация</a>
 						<?php } ?>
-
-
-
 						
 					</div>
 				</div>
