@@ -3,6 +3,9 @@
 	<!-- endbuild -->
 	<!-- build:jsVendor js/vendor.js -->
 	<script src="<?=HOST?>templates/assets/js/register-form-check.js"></script>
+	<script src="<?=HOST?>templates/assets/js/login-form-check.js"></script>
+	<script src="<?=HOST?>templates/assets/js/lost-password-form-check.js"></script>
+	<script src="<?=HOST?>templates/assets/js/set-new-password-form.js"></script>
 	<!-- endbuild -->
 	<!-- build:jsMain js/main.js -->
 	<script src="<?=HOST?>templates/assets/js/main.js"></script>

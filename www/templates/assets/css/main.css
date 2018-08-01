@@ -488,6 +488,15 @@ a.comment__related-to {
 .error__desc a {
   color: #38505e;
 }
+
+.error--success {
+  background-color: #00a85a;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#006e3b), to(#00a85a)); 
+  background-image: -webkit-linear-gradient(bottom, #006e3b 0%, #00a85a 100%); 
+  background-image: -o-linear-gradient(bottom, #006e3b 0%, #00a85a 100%);
+  background-image: linear-gradient(to top, #006e3b 0%, #00a85a 100%);
+}
+
 .input {
   height: 42px;
   width: 100%;
@@ -1636,6 +1645,7 @@ a.header-admin__name {
 }
 .login-page__link {
   color: #fefefe;
+  width: 100%;
 }
 .login-page__form {
   background-color: rgba(18, 45, 61, 0.6);

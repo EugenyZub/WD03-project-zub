@@ -18,7 +18,7 @@
 				<input class="checkbox__input" type="checkbox" name="checkbox"/>
 				<span class="checkbox__type"></span>&nbsp;Запомнить меня
 			</label>
-			<a class="login-page__link" href="#">Забыл пароль</a>
+			<a class="login-page__link" href="<?=HOST?>lost-password">Забыл пароль</a>
 		</div>
 
 		<input name="enter" type="hidden" value="login" />
