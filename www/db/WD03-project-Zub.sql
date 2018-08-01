@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июл 23 2018 г., 10:04
+-- Время создания: Авг 01 2018 г., 18:14
 -- Версия сервера: 5.5.53
 -- Версия PHP: 5.5.38
 
@@ -23,30 +23,42 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `about`
+-- Структура таблицы `users`
 --
 
-CREATE TABLE `about` (
-  `id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `description` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `users` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `email` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `role` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `password` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `name` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `secondname` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `city` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `country` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `avatar` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `avatar_small` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `recovery_code` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `recovery_code_times` int(11) UNSIGNED DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Дамп данных таблицы `about`
+-- Дамп данных таблицы `users`
 --
 
-INSERT INTO `about` (`id`, `name`, `description`) VALUES
-(1, 'Егор Казаков', 'Я Веб-разработчик');
+INSERT INTO `users` (`id`, `email`, `role`, `password`, `name`, `secondname`, `city`, `country`, `avatar`, `avatar_small`, `recovery_code`, `recovery_code_times`) VALUES
+(1, 'mail@mail.ru', 'admin', '$2y$10$qQhpYjaiENEXBjZWCEVrle/6wzvcc6GjLpg9oF0dNR4cLtoi7fuBm', 'Евгений', 'Зуб', 'Минск', 'Беларусь', NULL, NULL, 'LIrCW7ikEvQdhnp', 0),
+(2, 'user@gmail.com', 'user', '$2y$10$YqKJF2t88UjRBRDtQ5JjGOy2z0KQn5Au45Y.csyi3l6Lc3ULCK5Yq', 'Емельян', 'Казаков', 'Рязань', 'Россия', '262094618.jpg', '48-262094618.jpg', 't45aWK31ixUs08J', 3),
+(3, 'user2@gmail.com', 'user', '$2y$10$U1aSOZsZXdSe9ZP/RslFze6ykDGk5PCUztB0Oe8PZzJ83avj0t5LK', 'Tony', 'Stark', '', '', '383125280.jpg', '48-383125280.jpg', NULL, NULL),
+(4, 'testuser@mail.com', 'user', '$2y$10$SUe.osMUnN/4cmlN6YtLduk.Njk7TJ/WK7UnRd7SYe/j5/0K48xlC', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 --
 -- Индексы сохранённых таблиц
 --
 
 --
--- Индексы таблицы `about`
+-- Индексы таблицы `users`
 --
-ALTER TABLE `about`
+ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -54,10 +66,10 @@ ALTER TABLE `about`
 --
 
 --
--- AUTO_INCREMENT для таблицы `about`
+-- AUTO_INCREMENT для таблицы `users`
 --
-ALTER TABLE `about`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+ALTER TABLE `users`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
