@@ -2,10 +2,10 @@
 
 $title = "Вход на сайт";
 
-if (isset($_POST['login'])) {
+if ( isset($_POST['enter']) ) {
 
 	if ( trim($_POST['email']) == '' ) {
-		$errors[] = ['title' => 'Введите Email' ];
+		$errors[] = ['title' => 'Введите Email', 'desc' => '<p>Email обязателен для авторизации на сайтe</p>'];
 	}
 
 	if ( trim($_POST['password']) == '' ) {

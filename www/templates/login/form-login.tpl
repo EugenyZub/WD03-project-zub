@@ -4,11 +4,11 @@
 			
 		<?php 
 		// echo "<pre>";
-		// print_r($_POST);
+		 //print_r($errors);
 		// echo "</pre>";
 	 	?>
 
-		<?php require ROOT . "templates/_parts/errors.tpl" ?>
+		<?php   require ROOT . "templates/_parts/errors.tpl" ?>
 
 		<input class="input" type="email" name="email" placeholder="Email" />
 		<input class="input" type="password" name="password" placeholder="Пароль" />
@@ -21,6 +21,7 @@
 			<a class="login-page__link" href="#">Забыл пароль</a>
 		</div>
 
-		<input class="button button--enter" type="submit" value="Войти" name="login" />
+		<input name="enter" type="hidden" value="login" />
+		<input name="login" type="submit" value="Войти" class="button button--enter" />
 
 	</form>

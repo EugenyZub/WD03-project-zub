@@ -7,7 +7,14 @@
 	</div>
 	<div class="row">
 		<div class="col-md-auto">
-			<div class="avatar "><img src="../../../img/avatars/photo-big.jpg" title="Емельян Казаков" /></div>
+			<div class="avatar ">
+				<?php 
+					if( $_SESSION['logged_user']['avatar'] != "") { ?> 
+						<img src="<?=HOST?>usercontent/avatar/<?=$curentUser->avatar?>" title="<?=$curentUser->name?> <?=$curentUser->secondname?>" />
+				<?php }
+				?>
+				
+			</div>
 		</div>
 		<div class="col">
 			<div class="user-info">
@@ -20,7 +27,7 @@
 			</div>
 			<div class="user-info">
 				<div class="user-info__title">Страна, Город </div>
-				<div class="user-info__desc"><?=$curentUser->country?>, <?=$curentUser->city?></div>
+				<div class="user-info__desc"><?=$curentUser->country?> <?=$curentUser->city?></div>
 			</div>
 		</div>
 	</div>

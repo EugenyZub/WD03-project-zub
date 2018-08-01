@@ -1,7 +1,7 @@
 <?php 
 
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'project-04');
+define('DB_NAME', 'WD03-project-Zub');
 define('DB_USER', 'root');
 define('DB_PASS', '');
 

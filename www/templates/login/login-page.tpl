@@ -34,7 +34,7 @@
 				<div class="row justify-content-center">
 					<div class="col-md-auto text-center login-page__copyright">
 						<p>© Dream-Team</p>
-						<p>Создано с &nbsp<i class="fas fa-heart"></i>&nbsp в <a href="#" target="_blank">WebCademy.ru</a> в 2018 году</p>
+						<p>Создано с &nbsp<i class="fas fa-heart"></i>&nbsp в <a href="http://webcademy.ru/" target="_blank">WebCademy.ru</a> в 2018 году</p>
 					</div>
 				</div>
 			</div>

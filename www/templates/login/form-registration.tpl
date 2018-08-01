@@ -1,4 +1,4 @@
-<form class="login-page__form text-center" id="register-form" method="POST" action="<?=HOST?>profile">
+<form class="login-page__form text-center" id="register-form" method="POST" action="<?=HOST?>registration">
 	<div class="title-1">Регистрация</div>
 
 	<?php 	
@@ -12,6 +12,7 @@
 
 
 	<input class="input" type="email" name="email" placeholder="Email" />
-	<input class="input" type="password" name="pasword" placeholder="Пароль" />
-	<input type="submit" name="register" class="button button--enter"  value="Регистрация" />
+	<input class="input" type="password" name="password" placeholder="Пароль" />
+	<input name="registration" type="hidden" value="register" />
+	<input name="register" type="submit" value="Регистрация" class="button button--enter" />
 </form>
