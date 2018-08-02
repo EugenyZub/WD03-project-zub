@@ -61,18 +61,31 @@ switch ($uri[0]) {
 		require ROOT . "modules/profile/edit.php";
 		break;
 
+	// :::::::::::::::::::::: ABOUT :::::::::::::::::::::::::
 	case 'about':
 		include ROOT . "modules/about/index.php";
 		break;
 
+	// :::::::::::::::::::::: CONTACTS :::::::::::::::::::::::::
 	case 'contacts':
 		include ROOT . "modules/contacts/index.php";
 		break;
 
+	// :::::::::::::::::::::: BLOG :::::::::::::::::::::::::
 	case 'blog':
 		include ROOT . "modules/blog/index.php";
 		break;	
 
+	case 'blog/post-new':
+		include ROOT . "modules/blog/post-new.php";
+		break;	
+
+	// :::::::::::::::::::::: PORTFOLIO :::::::::::::::::::::::::
+	case 'portfolio':
+		include ROOT . "modules/portfolio/index.php";
+		break;	
+
+	// :::::::::::::::::::::: MAIN :::::::::::::::::::::::::
 	default:
 		echo "404 and Main page!";
 		break;

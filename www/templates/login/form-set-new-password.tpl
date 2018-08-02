@@ -5,7 +5,7 @@
 		
 		<?php 
 		// echo "<pre>";
-		 //print_r($errors);
+		 //print_r($_POST['password']);
 		// echo "</pre>";
 	 	?>
 

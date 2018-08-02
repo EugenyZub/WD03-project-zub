@@ -11,7 +11,7 @@ body {
   min-height: 100%;
 }
 /* fix for top margin collapsing and vertical scroll prevent for body tag, when body height = 100% */
-body::before {
+body::before {h
   content: "";
   display: block;
   width: 1px;

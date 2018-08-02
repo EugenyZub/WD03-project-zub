@@ -29,7 +29,7 @@ $(document).ready(function(){
 					+'<div class="error__desc"><p>Введите верные данные для входа или воспользуйтесь <a href="#">восстановлением пароля, </a>чтобы войти на сайт.</p>'
 					+'</div></div>'),
 				pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i,
-				emailVal = _email.val().trim(),
+				emailVal = _email.val().trim();
 
 				if (value.length === 0) {
 					input.next('.error').slideUp(500, function(){$(this).remove()});
