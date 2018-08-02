@@ -1,6 +1,6 @@
 <?php 
 		// echo "<pre>";
-		 print_r($_POST);
+		 //print_r($_POST);
 		// echo "</pre>";
 	 	?>
 <div class="container">
@@ -23,9 +23,9 @@
 								<p>Изображение jpg или png, рекомендуемая ширина 945px и больше, высота от 400px и более, вес до 2Мб.</p>
 							</div>
 						</legend>
-						<input class="inputfile" id="#file-3" type="file" name="postImg" data-multiple-caption="{count} файлов выбрано" multiple="multiple" />
+						<input class="inputfile" id="#file-3" type="file" name="postImg" multiple="multiple" />
 						<label for="#file-3">Выбрать файл</label>
-						<span>Файл не выбран</span>
+						<span class="file__inner-caption">Файл не выбран</span>
 					</fieldset>
 				</div>
 			</div>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Авг 01 2018 г., 18:14
+-- Время создания: Авг 01 2018 г., 13:57
 -- Версия сервера: 5.5.53
 -- Версия PHP: 5.5.38
 
@@ -36,20 +36,18 @@ CREATE TABLE `users` (
   `city` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `country` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `avatar` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `avatar_small` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `recovery_code` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `recovery_code_times` int(11) UNSIGNED DEFAULT NULL
+  `avatar_small` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Дамп данных таблицы `users`
 --
 
-INSERT INTO `users` (`id`, `email`, `role`, `password`, `name`, `secondname`, `city`, `country`, `avatar`, `avatar_small`, `recovery_code`, `recovery_code_times`) VALUES
-(1, 'mail@mail.ru', 'admin', '$2y$10$qQhpYjaiENEXBjZWCEVrle/6wzvcc6GjLpg9oF0dNR4cLtoi7fuBm', 'Евгений', 'Зуб', 'Минск', 'Беларусь', NULL, NULL, 'LIrCW7ikEvQdhnp', 0),
-(2, 'user@gmail.com', 'user', '$2y$10$YqKJF2t88UjRBRDtQ5JjGOy2z0KQn5Au45Y.csyi3l6Lc3ULCK5Yq', 'Емельян', 'Казаков', 'Рязань', 'Россия', '262094618.jpg', '48-262094618.jpg', 't45aWK31ixUs08J', 3),
-(3, 'user2@gmail.com', 'user', '$2y$10$U1aSOZsZXdSe9ZP/RslFze6ykDGk5PCUztB0Oe8PZzJ83avj0t5LK', 'Tony', 'Stark', '', '', '383125280.jpg', '48-383125280.jpg', NULL, NULL),
-(4, 'testuser@mail.com', 'user', '$2y$10$SUe.osMUnN/4cmlN6YtLduk.Njk7TJ/WK7UnRd7SYe/j5/0K48xlC', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `users` (`id`, `email`, `role`, `password`, `name`, `secondname`, `city`, `country`, `avatar`, `avatar_small`) VALUES
+(1, 'mail@mail.ru', 'admin', '$2y$10$//DS1JhlCs7ju.kj.SocJuKw4W6mgDp4vY9GAa9L.Id8..UMvtWeu', 'Евгений', 'Зуб', 'Минск', 'Беларусь', NULL, NULL),
+(2, 'user@gmail.com', 'user', '$2y$10$YqKJF2t88UjRBRDtQ5JjGOy2z0KQn5Au45Y.csyi3l6Lc3ULCK5Yq', 'Емельян', 'Казаков', 'Рязань', 'Россия', '262094618.jpg', '48-262094618.jpg'),
+(3, 'user2@gmail.com', 'user', '$2y$10$U1aSOZsZXdSe9ZP/RslFze6ykDGk5PCUztB0Oe8PZzJ83avj0t5LK', 'Tony', 'Stark', '', '', '383125280.jpg', '48-383125280.jpg'),
+(4, 'testuser@mail.com', 'user', '$2y$10$SUe.osMUnN/4cmlN6YtLduk.Njk7TJ/WK7UnRd7SYe/j5/0K48xlC', NULL, NULL, NULL, NULL, NULL, NULL);
 
 --
 -- Индексы сохранённых таблиц
